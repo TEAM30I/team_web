@@ -52,8 +52,8 @@ export default function Footer() {
         </div>
         <div className="mt-8 border-t pt-4">
           <p className="text-xs text-gray-500">
-            &copy; {new Date().getFullYear()} TEAM 301. 모든 권리 보유. | 대표: 김시훈 | 사업자등록번호: 123-45-67890
-          </p>
+            &copy; {new Date().getFullYear()} TEAM 301. Copy all right reserved. | 대표: 김시훈 | 사업자등록번호: 123-45-67890
+          </p>ㅋ
         </div>
       </div>
     </footer>
