@@ -59,7 +59,7 @@ export default function Home() {
   }
 
   return (
-    <main className="relative">
+    <main className="relative dark:bg-gray-900">
       <Header activeSection={activeSection} onNavigate={scrollToSection} />
 
       <SectionIndicator activeSection={activeSection} sectionCount={sectionRefs.length} onNavigate={scrollToSection} />

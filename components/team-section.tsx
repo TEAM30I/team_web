@@ -12,23 +12,23 @@ const TeamSection = forwardRef<HTMLElement>((_props, ref) => {
     {
       name: "김시훈",
       role: "프론트, AI",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/sihun.png?height=200&width=200",
       isLeader: true,
     },
     {
       name: "김수빈",
       role: "프론트, AI",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/subin.png?height=200&width=200",
     },
     {
       name: "박준범",
       role: "백엔드, AI",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/park.png?height=200&width=200",
     },
     {
       name: "조수빈",
       role: "UI/UX 디자인",
-      image: "/placeholder.svg?height=200&width=200",
+      image: "/josubin.png?height=200&width=200",
     },
   ]
 
@@ -46,7 +46,11 @@ const TeamSection = forwardRef<HTMLElement>((_props, ref) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-5xl mx-auto">
           {teamMembers.map((member, index) => (
             <div key={index} className="scroll-animation" style={{ transitionDelay: `${index * 0.1}s` }}>
-              <div className="w-48 h-48 bg-[#d9d9d9] rounded-full mx-auto mb-4"></div>
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-48 h-48 object-cover rounded-full mx-auto mb-4"
+              />
               <h3 className="font-bold">
                 {member.isLeader ? `[대표] ${member.name}` : member.name} / {member.role}
               </h3>
@@ -60,4 +64,3 @@ const TeamSection = forwardRef<HTMLElement>((_props, ref) => {
 
 TeamSection.displayName = "TeamSection"
 export default TeamSection
-
